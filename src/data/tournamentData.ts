@@ -6,8 +6,8 @@ export const TOURNAMENT_INFO = {
   season: '2026–2027',
   contactEmail: 'scienceolympiad@gwrymca.org',
   registrationFormUrl: 'https://forms.gle/VnueDE7xWVhFMYi9A',
-  tournamentPacketUrl: 'https://drive.google.com/file/d/1i088nJSn1Sue3BNC3TY6WyqNHCxZ3XcA/view?usp=sharing',
-  campusMapUrl: 'https://www.google.com/maps/d/u/5/edit?mid=1ecgALrryX6V6J8-4XikF6ss6tWq8IHM&usp=sharing',
+  tournamentPacketUrl: '/assets/aistudio/WashU_Division_B_Invitational_Tournament_Packet_2026_f8168f14.pdf',
+  campusMapUrl: 'https://www.google.com/maps/d/edit?mid=1NUjNvEpC055NMOp9zP4bfqyXtdK0Sz8&usp=sharing',
   anonymousFeedbackUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeC_69RpWqS87sWSK1jjyiagPihgrrEui3OsTrY7ZJLE9O-6Q/viewform?usp=header',
   dates: {
     divisionB: {

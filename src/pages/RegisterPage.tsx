@@ -137,7 +137,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
                 className="btn btn-outline btn-lg"
                 style={{ color: '#ffffff', borderColor: 'var(--slate-700)', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
               >
-                <span>View Event Catalog</span>
+                <span>Tournament Info & Map</span>
               </button>
             </div>
           </div>

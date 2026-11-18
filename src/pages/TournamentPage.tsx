@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
-import { TOURNAMENT_INFO, EVENTS_DATA } from '../data/tournamentData';
-import { PeriodicEventTable } from '../components/PeriodicEventTable';
+import { TOURNAMENT_INFO } from '../data/tournamentData';
 import { CountdownTimer } from '../components/CountdownTimer';
 import { CampusMapGuide } from '../components/CampusMapGuide';
 import { FAQS_DATA } from '../data/faqs';
 import {
   FileText,
   MapPin,
-  Calendar,
   Download,
   ExternalLink,
   ChevronDown,
   ChevronUp,
-  Shield,
-  Clock,
-  Sparkles,
-  HelpCircle,
-  Table
+  Shield
 } from 'lucide-react';
-import { Division } from '../types';
 
 interface TournamentPageProps {
   onNavigate: (path: string) => void;
@@ -45,10 +38,10 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ onNavigate }) =>
               Official Tournament Headquarters
             </span>
             <h1 style={{ fontSize: '2.85rem', fontWeight: 700, color: 'var(--slate-900)', marginBottom: '1rem' }}>
-              Tournament Information & Periodic Event Catalog
+              Tournament Information & Logistics
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'var(--slate-600)', lineHeight: 1.6 }}>
-              Interactive periodic table of events, mechanical countdown clocks, logistics schedules, rule interpretations, and Danforth campus maps for Washington University Science Olympiad.
+              Countdown clocks, official information packet, tournament guidelines, Danforth campus maps, and FAQs for Washington University Science Olympiad.
             </p>
           </div>
         </div>
@@ -242,50 +235,6 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ onNavigate }) =>
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* The Periodic Table of Events Section */}
-      <section id="periodic-catalog" style={{ paddingBottom: '4rem' }}>
-        <div className="container">
-          <div style={{ marginBottom: '1.5rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
-              <div
-                style={{
-                  width: '28px',
-                  height: '28px',
-                  borderRadius: '6px',
-                  backgroundColor: 'var(--washu-crimson)',
-                  color: '#ffffff',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}
-              >
-                <Table size={16} />
-              </div>
-              <span
-                style={{
-                  fontFamily: 'var(--font-heading)',
-                  fontSize: '0.85rem',
-                  fontWeight: 700,
-                  textTransform: 'uppercase',
-                  color: 'var(--washu-crimson)',
-                  letterSpacing: '0.05em'
-                }}
-              >
-                Interactive Event Catalog
-              </span>
-            </div>
-            <h2 style={{ fontSize: '2.25rem', fontWeight: 700, color: 'var(--slate-900)' }}>
-              Periodic Table of Events
-            </h2>
-            <p style={{ fontSize: '1rem', color: 'var(--slate-600)' }}>
-              Browse the competition elements categorized by scientific discipline. Click any element to peek at test details, required calculators, and laboratory safety rules.
-            </p>
-          </div>
-
-          <PeriodicEventTable events={EVENTS_DATA} />
         </div>
       </section>
 
