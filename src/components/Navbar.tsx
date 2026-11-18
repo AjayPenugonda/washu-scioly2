@@ -73,28 +73,31 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate, onOpenS
         >
           <div
             style={{
-              width: '42px',
-              height: '42px',
+              width: '44px',
+              height: '48px',
               borderRadius: '10px',
-              backgroundColor: 'var(--washu-crimson)',
+              backgroundColor: '#ffffff',
+              border: '1px solid var(--slate-200)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 4px 10px rgba(165, 20, 23, 0.25)',
+              overflow: 'hidden',
+              boxShadow: '0 2px 8px rgba(15, 23, 42, 0.08)',
               flexShrink: 0
             }}
           >
-            <span
+            <img
+              src="/assets/aistudio/Washu_Scioly_Logo_61b0cd71.png"
+              alt="WashU Science Olympiad Logo"
               style={{
-                color: '#ffffff',
-                fontFamily: 'var(--font-heading)',
-                fontWeight: 600,
-                fontSize: '1.25rem',
-                letterSpacing: '-0.02em'
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                transform: 'scale(1.75) translateY(7%)',
+                transformOrigin: 'center center',
+                display: 'block'
               }}
-            >
-              W
-            </span>
+            />
           </div>
           <div>
             <div

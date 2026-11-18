@@ -38,26 +38,30 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '1.25rem' }}>
               <div
                 style={{
-                  width: '40px',
-                  height: '40px',
+                  width: '44px',
+                  height: '48px',
                   borderRadius: '10px',
-                  backgroundColor: 'var(--washu-crimson)',
+                  backgroundColor: '#ffffff',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 4px 10px rgba(165, 20, 23, 0.4)'
+                  overflow: 'hidden',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.35)',
+                  flexShrink: 0
                 }}
               >
-                <span
+                <img
+                  src="/assets/aistudio/Washu_Scioly_Logo_61b0cd71.png"
+                  alt="WashU Science Olympiad Logo"
                   style={{
-                    color: '#ffffff',
-                    fontFamily: 'var(--font-heading)',
-                    fontWeight: 600,
-                    fontSize: '1.2rem'
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                    transform: 'scale(1.75) translateY(7%)',
+                    transformOrigin: 'center center',
+                    display: 'block'
                   }}
-                >
-                  W
-                </span>
+                />
               </div>
               <div>
                 <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '1.2rem', color: '#ffffff', letterSpacing: '-0.01em' }}>
