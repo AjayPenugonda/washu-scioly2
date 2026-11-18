@@ -35,41 +35,31 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         >
           {/* Col 1: Brand & Mission */}
           <div style={{ maxWidth: '340px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '1.25rem' }}>
+            <div style={{ marginBottom: '1.25rem' }}>
               <div
                 style={{
-                  width: '44px',
-                  height: '48px',
-                  borderRadius: '10px',
-                  backgroundColor: '#ffffff',
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  overflow: 'hidden',
+                  backgroundColor: '#ffffff',
+                  padding: '0.45rem 0.75rem',
+                  borderRadius: '10px',
                   boxShadow: '0 4px 12px rgba(0, 0, 0, 0.35)',
-                  flexShrink: 0
+                  marginBottom: '0.65rem'
                 }}
               >
                 <img
-                  src="/assets/aistudio/Washu_Scioly_Logo_61b0cd71.png"
-                  alt="WashU Science Olympiad Logo"
+                  src="/assets/aistudio/Screenshot_2026-11-17_at_11.21.17_PM_6087cbf5.png"
+                  alt="WashU SciOly Logo"
                   style={{
-                    width: '100%',
-                    height: '100%',
+                    height: '42px',
+                    width: 'auto',
                     objectFit: 'contain',
-                    transform: 'scale(1.75) translateY(7%)',
-                    transformOrigin: 'center center',
                     display: 'block'
                   }}
                 />
               </div>
-              <div>
-                <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '1.2rem', color: '#ffffff', letterSpacing: '-0.01em' }}>
-                  WashU SciOly
-                </div>
-                <div style={{ fontSize: '0.725rem', color: '#f87171', letterSpacing: '0.04em', textTransform: 'uppercase', fontWeight: 600 }}>
-                  Washington University in St. Louis
-                </div>
+              <div style={{ fontSize: '0.725rem', color: '#f87171', letterSpacing: '0.04em', textTransform: 'uppercase', fontWeight: 600 }}>
+                Washington University in St. Louis
               </div>
             </div>
             <p style={{ fontSize: '0.875rem', color: '#94a3b8', lineHeight: 1.6, marginBottom: '1.5rem' }}>

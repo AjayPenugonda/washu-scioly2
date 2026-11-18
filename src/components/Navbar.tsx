@@ -67,63 +67,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate, onOpenS
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.875rem',
             cursor: 'pointer'
           }}
         >
-          <div
+          <img
+            src="/assets/aistudio/Screenshot_2026-11-17_at_11.21.17_PM_6087cbf5.png"
+            alt="WashU SciOly — Washington University in St. Louis"
             style={{
-              width: '44px',
               height: '48px',
-              borderRadius: '10px',
-              backgroundColor: '#ffffff',
-              border: '1px solid var(--slate-200)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              overflow: 'hidden',
-              boxShadow: '0 2px 8px rgba(15, 23, 42, 0.08)',
-              flexShrink: 0
+              width: 'auto',
+              objectFit: 'contain',
+              display: 'block',
+              borderRadius: '6px'
             }}
-          >
-            <img
-              src="/assets/aistudio/Washu_Scioly_Logo_61b0cd71.png"
-              alt="WashU Science Olympiad Logo"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'contain',
-                transform: 'scale(1.75) translateY(7%)',
-                transformOrigin: 'center center',
-                display: 'block'
-              }}
-            />
-          </div>
-          <div>
-            <div
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontWeight: 600,
-                fontSize: '1.2rem',
-                color: 'var(--slate-900)',
-                letterSpacing: '-0.01em',
-                lineHeight: 1.15
-              }}
-            >
-              WashU SciOly
-            </div>
-            <div
-              style={{
-                fontSize: '0.725rem',
-                fontWeight: 600,
-                color: 'var(--washu-crimson)',
-                letterSpacing: '0.04em',
-                textTransform: 'uppercase'
-              }}
-            >
-              Washington University in St. Louis
-            </div>
-          </div>
+          />
         </div>
 
         {/* Desktop Navigation Links */}

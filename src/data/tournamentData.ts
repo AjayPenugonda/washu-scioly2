@@ -84,67 +84,124 @@ export const TIMELINE_SCHEDULE: TimelineEvent[] = [
 
 export const CAMPUS_BUILDINGS: CampusLocation[] = [
   {
-    id: 'hall-labsci',
-    name: 'Laboratory Sciences Building',
+    id: 'hall-seigle',
+    name: 'Seigle Hall',
     type: 'competition',
-    associatedWith: 'Chemistry, Biology & Wet Lab Events',
+    associatedWith: 'Testing, Lab & Build Events (Rooms 103–306 & L002–L006)',
     lat: 38.6489,
-    lng: -90.3090,
-    highlightedEvents: ['Chemistry Lab', 'Crime Busters', 'Forensics', 'Microbe Mission']
+    lng: -90.3125,
+    highlightedEvents: [
+      'Boomilever (Seigle L003)',
+      'Botany (Seigle 103)',
+      'Circuit Lab (Seigle 304)',
+      'Dynamic Planet (Seigle 303)',
+      'Experimental Design (Seigle 106)',
+      'Food Science (Seigle 306 • Impound)',
+      'Heredity (Seigle 208)',
+      'Hovercraft (Seigle 109 • Impound)',
+      'Meteorology (Seigle 204)',
+      'Rocks and Minerals (Seigle 111)',
+      'Roller Coaster (Seigle L006 • Impound)',
+      'Scrambler (Seigle L002 • Impound)',
+      'Solar System (Seigle 104)',
+      'Thermodynamics (Seigle 206 • Impound)',
+      'Water Quality (Seigle 301)'
+    ]
   },
   {
-    id: 'hall-lopata',
-    name: 'Lopata & Sever Hall (Engineering Complex)',
+    id: 'hall-simon',
+    name: 'Simon Hall',
     type: 'competition',
-    associatedWith: 'Engineering, Technology & Build Events',
-    lat: 38.6498,
+    associatedWith: 'Testing & Inquiry Events (Rooms 017, 018, 023)',
+    lat: 38.6478,
+    lng: -90.3106,
+    highlightedEvents: [
+      'Codebusters (Simon 023)',
+      'Disease Detectives (Simon 018)',
+      'Remote Sensing (Simon 017)'
+    ]
+  },
+  {
+    id: 'hall-louderman',
+    name: 'Louderman Hall',
+    type: 'competition',
+    associatedWith: 'Testing & Inquiry Events (Rooms 458 & 461)',
+    lat: 38.6494,
+    lng: -90.3082,
+    highlightedEvents: [
+      'Anatomy & Physiology (Louderman 458)',
+      'Write It Do It (Louderman 461)'
+    ]
+  },
+  {
+    id: 'hall-wrighton',
+    name: 'Wrighton Hall',
+    type: 'competition',
+    associatedWith: 'Lab & High-Ceiling Build Events (Room 350 & Wrighton Gallery)',
+    lat: 38.6493,
+    lng: -90.3086,
+    highlightedEvents: [
+      'Crime Busters (Wrighton 350)',
+      'Ping Pong Parachute (Wrighton Gallery)'
+    ]
+  },
+  {
+    id: 'hall-umrath',
+    name: 'Umrath Hall (Umrath Lounge)',
+    type: 'competition',
+    associatedWith: 'High-Ceiling Flight Build Event',
+    lat: 38.6477,
+    lng: -90.3091,
+    highlightedEvents: ['Elastic Launched Glider (Umrath Lounge)']
+  },
+  {
+    id: 'holmes-lounge',
+    name: 'Holmes Lounge',
+    type: 'hq',
+    associatedWith: 'Team Check-In, Coach’s Meeting & Tournament HQ',
+    lat: 38.6481,
+    lng: -90.3073,
+    highlightedEvents: [
+      'Team Check-In (7:00 AM CST)',
+      "Coach's Meeting (8:00 AM CST)",
+      'Executive Board & Appeals Desk'
+    ]
+  },
+  {
+    id: 'graham-chapel',
+    name: 'Graham Chapel',
+    type: 'hq',
+    associatedWith: 'Closing Awards Ceremony',
+    lat: 38.6485,
+    lng: -90.3078,
+    highlightedEvents: ['Awards Ceremony (5:00 PM – 6:30 PM CST)', 'Top 5 Event Medals']
+  },
+  {
+    id: 'hall-eads',
+    name: 'Eads Hall',
+    type: 'dining',
+    associatedWith: 'Assigned Team Homerooms (Rooms 102–216)',
+    lat: 38.6482,
     lng: -90.3065,
-    highlightedEvents: ['Circuit Lab', 'Engineering CAD', 'Detector Building', 'Electric Vehicle']
-  },
-  {
-    id: 'hall-rudolph',
-    name: 'Rudolph Hall (Earth & Planetary Sciences)',
-    type: 'competition',
-    associatedWith: 'Earth & Space Science Events',
-    lat: 38.6492,
-    lng: -90.3055,
-    highlightedEvents: ['Dynamic Planet', 'Rocks & Minerals', 'Astronomy', 'Fossils', 'Meteorology']
-  },
-  {
-    id: 'hall-crow',
-    name: 'Crow & Compton Hall (Physics Complex)',
-    type: 'competition',
-    associatedWith: 'Physics & Quantitative Test Events',
-    lat: 38.6496,
-    lng: -90.3048,
-    highlightedEvents: ['Optics', 'Wind Power', 'Reach for the Stars', 'Metric Mastery']
-  },
-  {
-    id: 'athletic-complex',
-    name: 'Sumers Recreation & Athletic Complex (Fieldhouse)',
-    type: 'competition',
-    associatedWith: 'Flight, Drop & High-Ceiling Build Events',
-    lat: 38.6480,
-    lng: -90.3135,
-    highlightedEvents: ['Helicopter', 'Bungee Drop', 'Air Trajectory', 'Boomilever', 'Tower', 'Scrambler']
+    highlightedEvents: [
+      'Eads 102–103 (Ladue)',
+      'Eads 112–116 (Wydown, John Burroughs)',
+      'Eads 203–209 (Greenwood, Sperreng)',
+      'Eads 211–216 (Lafayette, Steelville, Arcadia Valley)'
+    ]
   },
   {
     id: 'danforth-center',
-    name: 'Danforth University Center (DUC)',
+    name: 'Danforth University Center (DUC) & Campus Dining',
     type: 'dining',
-    associatedWith: 'Team Check-In, Dining & Student Lounges',
+    associatedWith: 'On-Campus Dining & Student Lounges',
     lat: 38.6475,
     lng: -90.3078,
-    highlightedEvents: ['Team Check-In', 'Tournament Helpdesk', 'Dining Hall', 'Team Gathering']
-  },
-  {
-    id: 'mallinckrodt-center',
-    name: 'Mallinckrodt Center & Edison Theatre',
-    type: 'hq',
-    associatedWith: 'Tournament Headquarters, Impound & Award Ceremonies',
-    lat: 38.6470,
-    lng: -90.3095,
-    highlightedEvents: ['Impound Drop-off', 'Coaches Lounge', 'Awards Ceremony']
+    highlightedEvents: [
+      'Café Bergson (DUC • 9 AM–3 PM)',
+      "Bear's Den (South 40 • 7 AM–12 AM)",
+      'Village House Dining (8 AM–11 PM)'
+    ]
   },
   {
     id: 'parking-millbrook',

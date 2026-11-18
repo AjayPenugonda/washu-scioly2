@@ -155,7 +155,14 @@ export const CampusMapGuide: React.FC = () => {
         ].map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setSelectedFilter(tab.id as any)}
+            onClick={() => {
+              const nextFilter = tab.id as 'all' | 'competition' | 'dining' | 'hq' | 'parking';
+              setSelectedFilter(nextFilter);
+              if (nextFilter !== 'all' && activeBuilding?.type !== nextFilter) {
+                const firstMatch = CAMPUS_BUILDINGS.find((b) => b.type === nextFilter) || null;
+                setActiveBuilding(firstMatch);
+              }
+            }}
             style={{
               padding: '0.45rem 0.9rem',
               borderRadius: '8px',

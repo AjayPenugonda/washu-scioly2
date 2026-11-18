@@ -19,12 +19,12 @@ export const FAQS_DATA: FAQItem[] = [
   {
     category: 'Tournament Day',
     question: 'Where will the tournament take place?',
-    answer: 'The tournament is held in-person across the Washington University in St. Louis Danforth Campus in St. Louis, Missouri. Testing and build events take place in collegiate laboratories and lecture halls including Laboratory Sciences, Lopata Hall, Rudolph Hall, Crow Hall, and the Sumers Athletic Complex.'
+    answer: 'The tournament is held in-person across the Washington University in St. Louis Danforth Campus in St. Louis, Missouri. Competition events take place in Seigle Hall, Simon Hall, Louderman Hall, Wrighton Hall, and Umrath Lounge.'
   },
   {
     category: 'Tournament Day',
     question: 'Where do teams have homerooms and check-in?',
-    answer: 'Team check-in and HQ helpdesks are located at the Danforth University Center (DUC) and Mallinckrodt Center. Dedicated homeroom classrooms with power outlets and WiFi are assigned to each school upon check-in.'
+    answer: 'Team check-in (starting at 7:00 AM CST) and the Coach’s Meeting (8:00 AM CST) are held at Holmes Lounge. Dedicated team homerooms are located in Eads Hall, and the closing Awards Ceremony is held at Graham Chapel.'
   },
   {
     category: 'Tournament Day',
