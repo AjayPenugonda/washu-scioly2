@@ -41,17 +41,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   display: 'inline-flex',
                   alignItems: 'center',
                   backgroundColor: '#ffffff',
-                  padding: '0.45rem 0.75rem',
+                  padding: '0.5rem 0.85rem',
                   borderRadius: '10px',
                   boxShadow: '0 4px 12px rgba(0, 0, 0, 0.35)',
                   marginBottom: '0.65rem'
                 }}
               >
                 <img
-                  src="/assets/aistudio/Screenshot_2026-11-17_at_11.21.17_PM_6087cbf5.png"
+                  src="/assets/aistudio/Screenshot_2026-11-17_at_11.31.33_PM_1064eebe.png"
                   alt="WashU SciOly Logo"
                   style={{
-                    height: '42px',
+                    height: '46px',
                     width: 'auto',
                     objectFit: 'contain',
                     display: 'block'

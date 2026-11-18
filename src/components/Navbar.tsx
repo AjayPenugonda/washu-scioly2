@@ -71,14 +71,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate, onOpenS
           }}
         >
           <img
-            src="/assets/aistudio/Screenshot_2026-11-17_at_11.21.17_PM_6087cbf5.png"
+            src="/assets/aistudio/Screenshot_2026-11-17_at_11.31.33_PM_1064eebe.png"
             alt="WashU SciOly — Washington University in St. Louis"
             style={{
-              height: '48px',
+              height: '52px',
               width: 'auto',
               objectFit: 'contain',
-              display: 'block',
-              borderRadius: '6px'
+              display: 'block'
             }}
           />
         </div>
