@@ -6,7 +6,6 @@ import { FAQS_DATA } from '../data/faqs';
 import {
   FileText,
   MapPin,
-  Download,
   ExternalLink,
   ChevronDown,
   ChevronUp,
@@ -73,32 +72,49 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ onNavigate }) =>
               }}
             >
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
-                  <div
-                    style={{
-                      width: '38px',
-                      height: '38px',
-                      borderRadius: '10px',
-                      backgroundColor: 'rgba(158, 27, 33, 0.3)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: '#f87171'
-                    }}
-                  >
-                    <FileText size={20} />
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <div
+                      style={{
+                        width: '38px',
+                        height: '38px',
+                        borderRadius: '10px',
+                        backgroundColor: 'rgba(158, 27, 33, 0.3)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#f87171'
+                      }}
+                    >
+                      <FileText size={20} />
+                    </div>
+                    <span
+                      style={{
+                        fontSize: '0.75rem',
+                        fontWeight: 700,
+                        textTransform: 'uppercase',
+                        color: '#f87171',
+                        letterSpacing: '0.06em',
+                        fontFamily: 'var(--font-heading)'
+                      }}
+                    >
+                      Official Google Doc
+                    </span>
                   </div>
+
                   <span
                     style={{
                       fontSize: '0.75rem',
                       fontWeight: 700,
-                      textTransform: 'uppercase',
-                      color: '#f87171',
-                      letterSpacing: '0.06em',
-                      fontFamily: 'var(--font-heading)'
+                      color: '#34d399',
+                      backgroundColor: 'rgba(16, 185, 129, 0.14)',
+                      border: '1px solid rgba(52, 211, 153, 0.35)',
+                      padding: '0.25rem 0.65rem',
+                      borderRadius: '9999px',
+                      letterSpacing: '0.02em'
                     }}
                   >
-                    Official Master PDF
+                    Updated for December 2026
                   </span>
                 </div>
 
@@ -107,7 +123,7 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ onNavigate }) =>
                 </h3>
 
                 <p style={{ fontSize: '0.925rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '1.5rem' }}>
-                  Contains complete schedules, rules clarifications, homeroom assignments, impound drop-offs, check-in logistics, and awards ceremony protocols.
+                  Updated for December 2026 (Division B Invitational). Contains complete schedules, rules clarifications, homeroom assignments, impound drop-offs, check-in logistics, and awards ceremony protocols.
                 </p>
               </div>
 
@@ -119,8 +135,8 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ onNavigate }) =>
                   className="btn btn-primary"
                   style={{ flex: 1 }}
                 >
-                  <Download size={16} />
-                  <span>Download Info Packet (PDF)</span>
+                  <FileText size={16} />
+                  <span>Info Packet</span>
                   <ExternalLink size={14} />
                 </a>
               </div>
